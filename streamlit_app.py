@@ -3,9 +3,6 @@ import snowflake.connector
 
 st.title('My Parents New Healthy Diner')
 
-
-session = cnx.session()
-
 # my_cnx = snowflake.connector.connect(st.secrets["snowflake"])
 my_cnx = st.connection("snowflake")
 my_cur = my_cnx.cursor()
